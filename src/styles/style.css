@@ -34,6 +34,11 @@ body{
     transition: background-color .3s ease;
 }
 
+.btn-default a{
+    text-decoration: none;
+    color: var(--second-color-2);
+}
+
 .btn-default:hover{
     background-color: var(--primary-color-1);
 }
