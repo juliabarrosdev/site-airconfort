@@ -1,0 +1,31 @@
+#parceiros{
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.partner-image img{
+    margin-top: 30%;
+    width: 200px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 1170px) {
+    #partners{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .partner-image img{
+        width: 180px;
+        height: 60px;
+    }
+}

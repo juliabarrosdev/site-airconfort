@@ -1,0 +1,49 @@
+:root{
+    --primary-color-1: #1C519D;
+    --primary-color-2: #189DEA;
+    --second-color-1: #252434;
+    --second-color-2: #1D1B29;
+
+    --neutre-color-1: #F4F4F4;
+}
+
+#about{
+   text-align: center;
+   margin-top: 5%;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.about-content img{
+    width: 400px;
+    height: 400px;
+    border-left: 15px solid var(--primary-color-2);
+    border-radius: 50%;
+}
+
+.about-content p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1170px) {
+    .about-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-content img{
+        margin-top: 10%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
