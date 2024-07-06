@@ -12,7 +12,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 0 8% 10px 8%;
+    padding: 2% 8% 2% 8%;
     background-color: #1C519D;
 }
 
@@ -64,6 +64,7 @@ header .btn-default:hover{
         display: none;
     }
     
+
     #mobile_btn{
         display: block;
         border: none;
@@ -76,6 +77,10 @@ header .btn-default:hover{
 
     #mobile_btn:hover{
         color: var(--second-color-2);
+    }
+
+    #mobile_menu > .btn-default {
+        color: #fff;
     }
 
     #mobile_menu.active{
