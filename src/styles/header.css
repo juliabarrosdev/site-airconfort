@@ -60,8 +60,14 @@ header .btn-default:hover{
 }
 
 @media screen and (max-width: 1170px) {
+
+
     #nav_list, #navbar .btn-default{
         display: none;
+    }
+
+    #mobile_menu > .btn-default {
+        margin-bottom: 5%;
     }
     
 
