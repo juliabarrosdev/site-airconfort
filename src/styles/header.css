@@ -12,7 +12,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 2% 8% 2% 8%;
+    padding: 2px 8% 2px 8%;
     background-color: #1C519D;
 }
 
@@ -28,8 +28,8 @@ header .btn-default:hover{
 }
 
 #nav_logo{
-    width: 190px;
-    height: 180px;
+    width: 150px;
+    height: auto;
 }
 
 #nav_list{

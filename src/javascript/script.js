@@ -5,23 +5,6 @@ $(document).ready(function() {
         $('#mobile_btn').find('i').toggleClass('fa-x');
     });
 
-    // Smooth scrolling for anchor links
-    $('#nav_list a, #mobile_nav_list a').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            var targetOffset = $(hash).offset().top - $('header').outerHeight();
-
-            // Smooth scroll to the target section
-            $('html, body').animate({
-                scrollTop: targetOffset
-            }, 100);
-
-            // Add 'active' class to clicked navigation item
-            $(this).parent().addClass('active').siblings().removeClass('active');
-        }
-    });
-
     // Function to highlight active navigation item
     function highlightActiveNavItem() {
         const scrollPosition = $(window).scrollTop();
@@ -38,6 +21,14 @@ $(document).ready(function() {
             }
         });
     }
+
+    // Initial call to highlight active navigation item
+    highlightActiveNavItem();
+
+    // Scroll event to highlight active navigation item
+    $(window).on('scroll', function() {
+        highlightActiveNavItem();
+    });
 
     // ScrollReveal animations
     ScrollReveal().reveal('#cta, #banner, #menu, #parceiros, #about', {
