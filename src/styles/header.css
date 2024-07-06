@@ -12,12 +12,16 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 2px 8% 2px 8%;
+    padding: 4px 8% 4px 8%;
     background-color: #1C519D;
 }
 
 header .btn-default:hover{
     background-color: #fff;
+}
+
+header .btn-default a:hover {
+    color: var(--primary-color-2);
 }
 
 #navbar{
@@ -61,7 +65,6 @@ header .btn-default:hover{
 
 @media screen and (max-width: 1170px) {
 
-
     #nav_list, #navbar .btn-default{
         display: none;
     }
@@ -70,7 +73,6 @@ header .btn-default:hover{
         margin-bottom: 5%;
     }
     
-
     #mobile_btn{
         display: block;
         border: none;
@@ -88,6 +90,11 @@ header .btn-default:hover{
     #mobile_menu > .btn-default {
         color: #fff;
     }
+
+    #mobile_menu > .btn-default:hover {
+        color: var(--primary-color-2);
+    }
+    
 
     #mobile_menu.active{
         display: flex;
